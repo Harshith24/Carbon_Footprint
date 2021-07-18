@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Home</title>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50"> 
+    <nav class="navbar navbar-default navbar-fixed-top container-fluid">
+        <div class="" style="padding: 0px; padding-left:1%; padding-right: 1%;">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+              <span class="icon-bar" style="background-color: black;"></span>
+              <span class="icon-bar" style="background-color: black;"></span>
+              <span class="icon-bar" style="background-color: black;"></span>                        
+            </button>
+            <a class="navbar-brand" href="home.html">Carbon Footprint Tracker</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" >
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="reduce_footprint.html">REDUCE YOUR FOOTPRINT</a></li>
+                <li><a href="food.html">FOOD</a></li>            
+            </ul>
+          </div>
+        </div>
+      </nav> <br><br><br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 col-md-7">
+            <form class="form-group" id="form-inp" style="padding:0">
+                <div class="form-group">
+                    <label>What is your monthly electricity bill</label>
+                    <input type="number" class="form-control mx-sm-3" name="electricity">
+                    <small class="text-muted">Enter a number</small>
+                </div>
+
+                <div class="form-group">
+                    <label>What is your monthly gas bill (if applicable)</label>
+                    <input type="number" class="form-control mx-sm-3" name="gas">
+                    <small class="text-muted">Enter a number</small>
+                </div>
+        
+                <div class="form-group">
+                    <label>What is your monthly oil bill (if applicable)</label>
+                    <input type="number" class="form-control mx-sm-3" name="oil">
+                    <small class="text-muted">Enter a number</small>
+                </div>
+        
+                <div class="form-group">
+                    <label>What is your yearly mileage</label>
+                    <input type="number" class="form-control mx-sm-3" name="mile">
+                    <small class="text-muted">Enter a number</small>
+                </div>
+        
+                <div class="form-group">
+                    <label>Enter number of flights in a year (less than 4hrs trip)</label>
+                    <input type="number" class="form-control mx-sm-3" name="flights_four_or_less">
+                    <small class="text-muted">Enter a number</small>
+                </div>
+        
+                <div class="form-group">
+                    <label>Enter number of flights in a year (more than or equal 4hrs trip)</label>
+                    <input type="number" class="form-control mx-sm-3" name="flights_four_more">
+                    <small class="text-muted">Enter a number</small>
+                </div>
+        
+                <div class="form-inline">
+                    <label>Do you recycle newspaper?</label>
+                    <input type="radio" name="newspaper" id="yes-n" value="Yes">
+                    <label for="yes-n">Yes</label>
+                    <input type="radio" name="newspaper" id="no-n" value="No">
+                    <label for="no-n">No</label>
+                </div>
+        
+                <div class="form-inline">
+                    <label>Do you recycle aluminum and tin? </label>
+                    <input type="radio" id="yes-a" name="aluminum" value="yes">
+                    <label for="yes-a">Yes</label>
+                    <input type="radio" id="no-a" name="aluminum" value="no">
+                    <label for="no-a">No</label><br>
+                </div> 
+                
+                <div>
+                    <input type="submit" class="form-control mx-sm-3" name="submit" value="Submit">
+                </div>
+            </form>
+          </div>
+          <div class="col-sm-12 col-lg-6 col-md-5" style="text-align: center;">
+            <h1 style="text-align: center;">Your Carbon Footprint:</h1>            
+            <label id="final-value" style="text-align: center; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: xx-large;"></label> <br>
+            <div id="your_result" class="jumbotron text-center" style="background-color:white">
+                <h1 style="color:lightcoral">What does Your Result Mean?</h1>
+                <p style="color:black">
+                If you have a footprint value (pounds per year) less than 6000, this is excellent! If you footprint value is between 6000 and 15999, this is a good value. 
+                If you have a footprint value between 16000 and 22000, this is average. Anything over 22000 is a poor footprint value. Higher values imply that your are 
+                polluting more. 
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+      <div id="your_result" class="jumbotron text-center bg-gray" style="padding-inline: 4%;">
+        <h1 style="color:lightcoral">How is this result calculated?</h1> <br><br>
+        <p style="color:black">
+            The book <i>The Environment Equation</i> Alexandra Shimo-Barry explains how to quickly calculate your own 
+            carbon footprint, which is the amount of greenhouse gases in units of carbon dioxide. <br>
+            Shimo-Barry uses an equation which takes into account several inputs that require energy, multiplies it by a specific constant, and
+            adds up all the inputs which makes up your carbon footprint value. This calculation does not take the food you 
+            eat (which requires a significant amount of energy to grow, process, and deliver) into account. Read more about 
+            the impact of different types of foods in the foods section. 
+        </p>
+    </div> 
+
+    <div id="lights" class="container-fluid text-center" style="padding-bottom:2%">
+        <h1 style="color:lightcoral">Find out more about Alexandra Shimo-Barry!</h1> <br>
+        
+        <div class="row" style="text-align: center; ">
+            <div class="col-sm-12 col-md-8 col-lg-8" >
+                <p style="color:black; font-size: large; padding: 4%;">
+                    <i>
+                        "Alexandra Shimo is a Canadian writer, who was a shortlisted nominee for the Governor General's Award for English-language non-fiction at the 2014 Governor General's Awards as cowriter of Edmund Metatawabin's memoir Up Ghost River: A Chief's Journey Through the Turbulent Waters of Native History" -Wikipedia 
+                     </i> 
+                 </p>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="../static/images/shimo-barry.png" alt="" class="img-responsive img-circle">
+            </div>
+          </div>
+    </div>
+
+      <script src="../static/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+HOME PAGE SECTION:
+-Mention the name and a quick overview on what carbon footprint means
+-Mention that this app does not take into account your food intake. Food also contributes to your carbon footprint. Mention that you should consider avoiding 
+domesticated/processed meat/food. Switch to plan-based food. 
+
+Logic:
+Sum (footprint value) = 0
+
+Add the following calculations to sum:
+1. Monthly Electricity Bill (x 105)
+2. Monthly gas Bill (x 105)
+3. Monthly oil bill (x 113)
+4. Yearly mileage (x .79)
+5. Num flights (< 4hrs) (x 1100)
+6. Num flights (>= 4 hrs) (x 4400)
+7. Recycle Newspaper NO? => +184 else +0
+8. Recycle aluminum and tin  No? => +166 else +0
+
+if sum < 6000 => Excellent. if sum between 6000 and 15999 => Good. if sum between 16000 and 22000 => avg. else => Poor
+
+HOW TO REDUCE UR FOOTPRINT SECTION:
+-mention avg carbon footprint and how small changes in our daily lives can lead to huge differences
+-List out some easy, practical, and impactful steps ppl can take to cut their carbon footprint
+
+FOOD SECTION:
+-Talk about different types of meats and common foods 

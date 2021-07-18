@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Food</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top container-fluid">
+        <div class="" style="padding: 0px; padding-left:1%; padding-right: 1%;">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+              <span class="icon-bar" style="background-color: black;"></span>
+              <span class="icon-bar" style="background-color: black;"></span>
+              <span class="icon-bar" style="background-color: black;"></span>                        
+            </button>
+            <a class="navbar-brand" href="#myPage">Carbon Footprint Tracker</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right" >
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="reduce_footprint.html">REDUCE YOUR FOOTPRINT</a></li>
+                <li><a href="food.html">FOOD</a></li>            
+            </ul>
+          </div>
+        </div>
+      </nav> <br><br>
+
+      <div class="container-fluid">
+        <div class="page-header">
+          <h1 style="text-align: center;">Impact of Food</h1>
+        </div>
+      </div>
+
+      <div id="charts-food" class="container-fluid text-center" >
+        <div class="row" style="text-align: center;">
+            <h3>Avoiding excessive meat consumption and processed food is one of the best ways to reduce the greenhouse gas emissions from food</h3>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div id="gas-emissions" style="width: 100%; height: 500px;"></div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div id="food-portion" style="width: 100%; height: 500px;"></div>                
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div id="food-breakdown" style="width: 100%; height: 500px;"></div>
+            </div>
+        </div>        
+    </div>
+
+
+    <div id="quiz-field" class="container-fluid text-center" style="background-color: lightgray;">
+        <h3 style="color:lightcoral">Test your knowledge on the impact of your food choices</h3><br>
+        <br/>
+        <div id="quiz">
+            <div class="form-inline">
+                <label>What one of these meats produces the most greenhouse gas emissions?    </label>
+                <input type="radio" id="pork" name="meat" value="pork">
+                <label for="pork">Pork</label>
+                <input type="radio" id="beef" name="meat" value="beef">
+                <label for="beef">Beef</label>
+                <input type="radio" id="chicken" name="meat" value="chicken">
+                <label for="chicken">Chicken</label>
+                <label id="meats-ans" style="padding-left: 2%"></label><br> <br>
+            </div> 
+            <div class="form-inline">
+                <label>Nuts and Beans have the highest greenhouse gas emission. True or False?    </label>
+                <input type="radio" id="true-nut" name="nuts" value="true-nut">
+                <label for="true-nut">True</label>
+                <input type="radio" id="false-nut" name="nuts" value="false-nut">
+                <label for="false-nut">False</label>
+                <label id="nuts-ans"  style="padding-left: 2%"></label><br> <br>
+            </div> 
+            <div class="form-inline">
+                <label>Citrus fruits have one of the lowest greenhouse gas emissions. True or False?    </label>
+                <input type="radio" id="true-gas" name="citrus" value="true-gas">
+                <label for="true-gas">True</label>
+                <input type="radio" id="false-gas" name="citrus" value="false-gas">
+                <label for="false-gas">False</label>
+                <label id="citrus-ans" style="padding-left: 2%"></label><br> <br>
+            </div> 
+            <div class="form-inline">
+                <label>The impact of Beef is higest in Which one of these regions    </label>
+                <input type="radio" id="latin" name="beef" value="Latin America">
+                <label for="latin">Latin America</label>
+                <input type="radio" id="sAsia" name="beef" value="South Asia">
+                <label for="sAsia">South Asia</label>
+                <input type="radio" id="Oceania" name="beef" value="Oceania">
+                <label for="Oceania">Oceania</label>
+                <input type="radio" id="nAmerica" name="beef" value="North America">
+                <label for="nAmerica">North America</label>
+                <label id="beef-ans" style="padding-left: 2%"></label><br> <br>
+            </div> 
+            <input type="submit" class="btn btn-large" name="submit" value="submit" onclick="clicked()"> <br><br>
+        </div>
+        
+        <!-- <div id="food-quiz" class="container-fluid text-center" style="background-color: white;">
+            <h3 style="color: lightcoral;">Find out your food print here</h3>
+            <a href="https://foodprint.org/quiz/"><button class="btn btn-large">Find out your foodprint!</button></a>
+        </div> -->
+    </div>
+
+    <div id="food-quiz" class="jumbotron text-center" style="padding-inline: 3%; background-color: white;">
+        <div class="row" style="text-align: left; ">
+            <div class="col-sm-12 col-md-8 col-lg-8" style="padding-top: 10%">
+                <h1 style="color:lightcoral">Find out your foodprint here!</h1> <br><br>
+                <a href="https://foodprint.org/quiz/"><button class="btn btn-large">Find out!</button></a>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+              <img src="../static/images/foodprint.png" alt="" class="img-responsive img-circle">
+            </div>
+          </div>
+    </div> 
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../static/food.js"></script>
+    </body>
+</html>
